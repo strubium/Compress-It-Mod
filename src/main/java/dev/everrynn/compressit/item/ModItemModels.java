@@ -1,7 +1,6 @@
 package dev.everrynn.compressit.item;
 
 import dev.everrynn.compressit.CompressIt;
-import dev.everrynn.compressit.item.ModItems;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
