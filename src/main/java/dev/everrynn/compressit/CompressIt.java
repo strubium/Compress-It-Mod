@@ -1,25 +1,28 @@
 package dev.everrynn.compressit;
 
-import dev.everrynn.compressit.item.ModItemGroups;
 import dev.everrynn.compressit.item.ModItems;
-import net.fabricmc.api.ModInitializer;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+/**
+ * Main mod class for Forge 1.12.2
+ */
+@Mod(
+		modid = CompressIt.MOD_ID,
+		name = CompressIt.NAME,
+		version = CompressIt.VERSION
+)
+public class CompressIt {
 
-public class CompressIt implements ModInitializer {
 	public static final String MOD_ID = "compressit";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final String NAME = "Compress It";
+	public static final String VERSION = "1.0.0";
 
-	@Override
-	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
-		ModItems.registerModItems();
+	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
+
+	public static void info(String text) {
+		LOGGER.info("[" + MOD_ID + "]: " + text);
 	}
-
-	public static void info(String text){
-		LOGGER.info("[" + CompressIt.MOD_ID + "]: " + text);
-
-	}
-
 }

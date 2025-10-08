@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "compress-it",
+    "name": "Compress It!",
+    "description": "Tired of a mess in your inventory? Let us tie some trash for you!",
+    "version": "${version}",
+    "mcversion": "1.12.2",
+    "url": "https://modrinth.com/mod/compress-it!",
+    "updateUrl": "",
+    "authorList": [
+      "Rynn Lee",
+      "DaudAttano",
+      "strubium"
+    ],
+    "credits": "",
+    "logoFile": "assets/compress-it/icon.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
